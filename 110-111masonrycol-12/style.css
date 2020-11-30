@@ -1,0 +1,89 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat,Philosopher,Roboto;
+    
+}
+.potfulio-bg-1{
+    background-image: url(img/bg-1.jpg);
+}.potfulio-bg-2{
+    background-image: url(img/bg-2.png);
+}.potfulio-bg-3{
+    background-image: url(img/bg-3.jpg);
+}.potfulio-bg-4{
+    background-image: url(img/bg-4.jpg);
+}
+
+.single-potfulio::after{
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#949696+3,000000+100 */
+background: #949696; /* Old browsers */
+background: -moz-linear-gradient(top,  #949696 3%, #000000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #949696 3%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #949696 3%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#949696', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+
+
+}
+/*========================   Nav manu ==================*/
+
+.potfulio-item {
+  overflow: hidden;
+}
+.single-potfulio {
+  float: left;
+  width: 33.3333%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+  position: relative;
+  z-index: 1;
+}
+.single-potfulio.larg-img {
+  height: 600px;
+}
+.potfulio-hover {
+  position: absolute;
+  bottom: -50px;
+  padding: 20px;
+  color: #fff;
+  font-size: 12px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.potfulio-hover h4 {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.single-potfulio::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  z-index: -1;
+  opacity: 0;
+  transition: .3s;
+}
+.single-potfulio:hover::after {
+  opacity: .7;
+  cursor: pointer;
+}
+.single-potfulio:hover .potfulio-hover {
+  opacity: 1;
+  visibility: visible;
+  bottom: 0;
+}
+
+
+
+
+
+
